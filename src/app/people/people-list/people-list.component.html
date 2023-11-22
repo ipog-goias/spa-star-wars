@@ -1,0 +1,15 @@
+<p>people-list works!</p>
+<h1>Lista de dados da API characters</h1>
+<ul *ngFor="let item of peoples">
+    <li>{{item.name}}</li>
+    <li>{{item.height}}</li>
+    <li>{{item.birth_year}}</li>
+    <li>
+        <h3>Lista de filmes:</h3>
+        <ul *ngFor="let films of item.films">
+            <li>{{films}}</li>
+            <hr>
+        </ul>
+    </li>
+    <hr>
+</ul>
